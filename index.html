@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Button ChatBot</title>
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: sans-serif;
+      padding: 30px;
+      text-align: center;
+    }
+    #chatbox {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      background: #2196f3;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #1976d2;
+    }
+    .response {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<div id="chatbox">
+  <h2>🤖 Select a Tech Question</h2>
+  <button class="btn" onclick="getAnswer('html')">What is HTML?</button>
+  <button class="btn" onclick="getAnswer('css')">What is CSS?</button>
+  <button class="btn" onclick="getAnswer('js')">What is JavaScript?</button>
+  <button class="btn" onclick="getAnswer('python')">What is Python?</button>
+  <button class="btn" onclick="getAnswer('ai')">What is AI?</button>
+
+  <div class="response" id="responseBox"></div>
+</div>
+
+
+<script src="bot_button.js"></script>
+</body>
+</html>

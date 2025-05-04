@@ -42,16 +42,17 @@
 </head>
 <body>
 
-<div id="chatbox">
-  <h2>🤖 Select a Tech Question</h2>
-  <button class="btn" onclick="getAnswer('html')">What is HTML?</button>
-  <button class="btn" onclick="getAnswer('css')">What is CSS?</button>
-  <button class="btn" onclick="getAnswer('js')">What is JavaScript?</button>
-  <button class="btn" onclick="getAnswer('python')">What is Python?</button>
-  <button class="btn" onclick="getAnswer('ai')">What is AI?</button>
+  <h2>Ask About a Topic</h2>
+  <select id="topicSelect">
+    <option value="html">HTML</option>
+    <option value="css">CSS</option>
+    <option value="js">JavaScript</option>
+    <option value="python">Python</option>
+    <option value="ai">AI</option>
+  </select>
+  <button onclick="getAnswer()">Get Answer</button>
 
-  <div class="response" id="responseBox"></div>
-</div>
+  <div id="responseBox">🤖 Select a topic and click "Get Answer".</div>
 
 
 <script src="bot_button.js"></script>

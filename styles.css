@@ -1,0 +1,125 @@
+body {
+      background-color: #f9f9f9;
+      font-family: sans-serif;
+      padding: 30px;
+      text-align: center;
+    }
+    h2{
+      color: red;
+      font-family: serif;
+      font-style: italic;
+     
+    }
+    #responseBox {
+      width: 200px;
+      margin: auto;
+      background-color: gold;
+      color: brown;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    button {
+      display: block;
+      width: 100%;
+    
+      padding: 20px;
+      margin-left: 10rem;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      background-color: blue;
+      color: aqua;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      
+    } 
+    
+.whatsapp{
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+.chatbot{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+    
+.container{
+    overflow: ;
+}
+
+.chat-box{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+   
+}
+@media screen and (max-width: 982px ){
+    .flex{
+       flex-wrap : wrap;
+        background-color: green;
+    }
+    body{
+        font-size: larger;
+    }
+}
+/* Default styles for all screens */
+body {
+    background-color: white;
+    font-size: 16px;
+    text-align: center;
+}
+/* Media query for screens 768px or smaller */
+/* @media (max-width: 768px) {
+    body {
+        background-color: lightgray;
+        font-size: 14px;
+    }
+} */
+@media (max-width:900px)and(orientation:portrait) {
+    body{
+        background-color: lightgrey;
+        font-size: 14px;
+    }
+    
+}
+/* Styles for printing */
+ @media print {
+    body {
+        background-color: blue;
+        color: black;
+        font-size: 12pt;
+    }
+    h1, p {
+        color: black;
+    }
+}
+
+#responseBox{
+    animation: greentored 2s 0s 6; }
+
+/* Animation */
+@keyframes greentored {
+    from{
+        background-color: green;
+    }
+    to{
+        background-color: red;
+    }
+    
+}
+button{
+    animation: rotating 2s 0s infinite; 
+}
+@keyframes rotating {
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+    
+} 

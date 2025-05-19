@@ -2,46 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
   <title>Button ChatBot</title>
-  <style>
-    body {
-      background-color: #f9f9f9;
-      font-family: sans-serif;
-      padding: 30px;
-      text-align: center;
-    }
-    h2{
-      color: red;
-      font-family: serif;
-      font-style: italic;
-    }
-    #responseBox {
-      max-width: 300px;
-      margin: auto;
-      background-color: gold;
-      color: brown;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    button {
-      display: block;
-      width: 30%;
-      padding: 10px;
-      margin-left: 10rem;
-      margin-bottom: 20px;
-      margin-top: 20px;
-      background: green;
-      color: aqua;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      
-    } 
-  </style>
 </head>
-<body>
+<body class="chat-box">
+  <div class="navbar"><h1 >Welcome to My Responsive Site</h1></div>
+    
 
+<div class="flex">
   <h2>Ask About a Topic</h2>
  <select id="topicSelect">
     <option value="html">HTML</option>
@@ -52,9 +20,17 @@
   </select>
   <button onclick="getAnswer()">Get Answer</button>
 
-  <div id="responseBox">🤖 Select a topic and click "Get Answer".</div>
+  <div class="container"><div id="responseBox">🤖 Select a topic and click "Get Answer".</div></div>
+</div>
 
+<div class="whatsapp">
+  <img src="./download.png" width="50px" height="50px" alt="">
+</div>
+<div class="chatbot">
+  <img src="./download (1).png" width="50px" height="50px">
+</div>
 
 <script src="bot_button.js"></script>
+
 </body>
 </html>
